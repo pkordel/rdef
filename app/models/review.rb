@@ -1,5 +1,4 @@
 class Review < Spira::Base
-  Spira.add_repository(:default, ::Repository.new('http://data.deichman.no/sparql'))
   base_uri 'http://data.deichman.no/bookreviews/deichman'
 
   type Rev.Review
