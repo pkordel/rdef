@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.2'
+gem 'rails', '3.2.3'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -23,7 +23,20 @@ gem 'jquery-rails'
 
 gem 'spira', git: 'https://github.com/cordawyn/spira.git'
 
-gem 'sparql-client', git: 'git://github.com/xaop/sparql-client.git', branch: 'virtuoso_update'
+gem 'rdf-virtuoso', path: '../rdf-virtuoso'
+
+group :test do
+  gem 'rspec-rails'
+  gem 'cucumber-rails'
+  gem 'database_cleaner'
+  gem 'vcr'
+  gem 'webmock'
+end
+
+group :development do
+  gem 'guard-spork'
+  gem 'guard-cucumber'
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
