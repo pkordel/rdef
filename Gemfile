@@ -27,7 +27,7 @@ gem 'rdf-virtuoso', path: '../rdf-virtuoso'
 
 group :test do
   gem 'rspec-rails'
-  gem 'cucumber-rails'
+  gem 'cucumber-rails', require: false
   gem 'vcr'
   gem 'webmock'
 end
