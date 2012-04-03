@@ -7,9 +7,8 @@ GIT
       rdf (>= 0.2.3)
       rdf-isomorphic (>= 0.3.0)
 
-GIT
-  remote: https://pkordel@github.com/pkordel/rdf-virtuoso.git
-  revision: a579e4a40c3a96af016841e5dfc580e5ecf65a65
+PATH
+  remote: ../rdf-virtuoso
   specs:
     rdf-virtuoso (0.0.1)
       net-http-persistent (~> 2.6)

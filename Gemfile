@@ -24,8 +24,8 @@ gem 'jquery-rails'
 gem 'spira', git: 'https://github.com/cordawyn/spira.git'
 #gem 'spira', path: '../spira'
 
-#gem 'rdf-virtuoso', path: '../rdf-virtuoso'
-gem 'rdf-virtuoso', git: 'https://pkordel@github.com/pkordel/rdf-virtuoso.git'
+gem 'rdf-virtuoso', path: '../rdf-virtuoso'
+#gem 'rdf-virtuoso', git: 'https://pkordel@github.com/pkordel/rdf-virtuoso.git'
 
 group :test do
   gem 'rspec-rails'
