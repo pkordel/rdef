@@ -21,7 +21,7 @@ end
 
 gem 'jquery-rails'
 
-gem 'spira', git: 'https://github.com/cordawyn/spira.git'
+gem 'spira', git: 'https://github.com/cordawyn/spira.git', branch: 'activemodelish'
 #gem 'spira', path: '../spira'
 
 gem 'rdf-virtuoso', path: '../rdf-virtuoso'
@@ -37,6 +37,7 @@ end
 group :development do
   gem 'guard-spork'
   gem 'guard-cucumber'
+  gem 'debugger'
 end
 
 # To use ActiveModel has_secure_password
@@ -51,5 +52,3 @@ end
 # Deploy with Capistrano
 # gem 'capistrano'
 
-# To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'

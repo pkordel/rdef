@@ -1,6 +1,6 @@
-class Review < AbstractModel
-  base_uri 'http://data.deichman.no/bookreviews/deichman'
-  prefixes RDF::Virtuoso::Prefixes.new(rev: Rev, dc:  DC)
+class Review < Spira::Base
+
+  configure base_uri: 'http://data.deichman.no/bookreviews/deichman'
 
   type Rev.Review
   property :title,    predicate: Rev.title,   type: String
