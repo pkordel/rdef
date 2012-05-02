@@ -21,8 +21,8 @@ end
 
 gem 'jquery-rails'
 
-gem 'spira', git: 'https://github.com/cordawyn/spira.git', branch: 'activemodelish'
-#gem 'spira', path: '../spira'
+#gem 'spira', git: 'https://github.com/cordawyn/spira.git', branch: 'activemodelish'
+gem 'spira', path: '../spira'
 
 gem 'rdf-virtuoso', path: '../rdf-virtuoso'
 #gem 'rdf-virtuoso', git: 'https://pkordel@github.com/pkordel/rdf-virtuoso.git'
@@ -38,6 +38,8 @@ group :development do
   gem 'guard-spork'
   gem 'guard-cucumber'
   gem 'debugger'
+  gem 'pry'
+  gem 'pry-nav'
 end
 
 # To use ActiveModel has_secure_password
