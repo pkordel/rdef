@@ -1,6 +1,8 @@
 class Review < Spira::Base
 
-  configure base_uri: 'http://data.deichman.no/bookreviews/deichman'
+  belongs_to :source
+
+  configure base_uri: 'http://data.deichman.no/reviews'
 
   type Rev.Review
   property :title,    predicate: Rev.title,   type: String
